@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/logo_ikan.png" type="image/png">
-    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="./src/output.css">
     <title>AquaSkuy - Detail Komponen: Ikan Guppy</title>
 
     <!-- Google Fonts (Lato, Montserrat, Quicksand) -->
@@ -15,21 +15,22 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <header class="navbar-container">
-        <a href="index.html" class="logo">AquaSkuy</a>
+<body class="bg-bg-body text-slate-800 font-lato leading-relaxed">
+    <!-- Navbar Container -->
+    <header class="navbar-container w-full flex py-3 px-6 md:px-40 mx-auto justify-between items-center z-[9999] shadow-sm bg-white/85 backdrop-blur-md border-b border-slate-200 sticky top-0 transition-all duration-300 flex-col md:flex-row gap-3 md:gap-0">
+        <a href="index.html" class="logo font-montserrat text-3xl font-extrabold text-primary hover:text-accent tracking-tight transition-colors duration-200 no-underline">AquaSkuy</a>
         <nav>
-            <ul>
-                <li><a href="index.html#welcome">Welcome</a></li>
-                <li><a href="index.html#content">Content</a></li>
-                <li><a href="index.html#gallery">Gallery</a></li>
-                <li><a href="library.html" class="active-nav">Library</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">Contact <i class="fas fa-caret-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="https://www.linkedin.com/in/ahmadfillahalwy/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
-                        <li><a href="https://github.com/fillahalwy"><i class="fa-brands fa-github"></i> GitHub</a></li>
-                        <li><a href="https://www.instagram.com/a.fillahalwy/"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+            <ul class="flex justify-center items-center gap-1 md:gap-2 m-0 p-0 list-none">
+                <li><a href="index.html#welcome" class="text-primary py-2 px-3 md:px-5 text-base font-semibold rounded-md hover:bg-primary hover:text-white transition-all duration-200 no-underline">Welcome</a></li>
+                <li><a href="index.html#content" class="text-primary py-2 px-3 md:px-5 text-base font-semibold rounded-md hover:bg-primary hover:text-white transition-all duration-200 no-underline">Content</a></li>
+                <li><a href="index.html#gallery" class="text-primary py-2 px-3 md:px-5 text-base font-semibold rounded-md hover:bg-primary hover:text-white transition-all duration-200 no-underline">Gallery</a></li>
+                <li><a href="library.html" class="active-nav text-primary py-2 px-3 md:px-5 text-base font-semibold rounded-md hover:bg-primary hover:text-white transition-all duration-200 no-underline">Library</a></li>
+                <li class="relative dropdown">
+                    <a href="#" class="dropdown-toggle text-primary py-2 px-3 md:px-5 text-base font-semibold rounded-md hover:bg-primary hover:text-white transition-all duration-200 no-underline cursor-pointer select-none">Contact <i class="fas fa-caret-down ml-1"></i></a>
+                    <ul class="dropdown-menu hidden absolute right-0 top-full mt-3 min-w-[180px] bg-white border border-slate-200 shadow-xl rounded-xl p-2 z-[1000] transition-all duration-200">
+                        <li><a href="https://www.linkedin.com/in/ahmadfillahalwy/" class="block py-2.5 px-4 text-slate-800 text-sm font-medium hover:bg-bg-section-alt hover:text-primary rounded-md transition-colors duration-200 no-underline"><i class="fa-brands fa-linkedin mr-2"></i> LinkedIn</a></li>
+                        <li><a href="https://github.com/fillahalwy" class="block py-2.5 px-4 text-slate-800 text-sm font-medium hover:bg-bg-section-alt hover:text-primary rounded-md transition-colors duration-200 no-underline"><i class="fa-brands fa-github mr-2"></i> GitHub</a></li>
+                        <li><a href="https://www.instagram.com/a.fillahalwy/" class="block py-2.5 px-4 text-slate-800 text-sm font-medium hover:bg-bg-section-alt hover:text-primary rounded-md transition-colors duration-200 no-underline"><i class="fa-brands fa-instagram mr-2"></i> Instagram</a></li>
                     </ul>
                 </li>
             </ul>
@@ -37,73 +38,74 @@
     </header>
 
     <main>
-        <div class="detail-container">
-            <!-- Left Column: Image -->
-            <div class="detail-img-box">
-                <img src="assets/img/guppy.png" alt="Ikan Guppy Hias">
+        <div class="detail-container flex flex-col items-center gap-12 py-16 px-6 md:px-8 max-w-[800px] mx-auto bg-bg-body">
+            <!-- Top Image Banner -->
+            <div class="detail-img-box w-full h-[280px] md:h-[450px] rounded-2xl overflow-hidden shadow-xl border border-slate-200 bg-white">
+                <img src="assets/img/guppy.png" alt="Ikan Guppy Hias" class="w-full h-full object-cover block">
             </div>
 
-            <!-- Right Column: Detail Content -->
-            <div class="detail-info-box">
-                <h1 class="detail-title">Ikan Guppy (Poecilia reticulata)</h1>
+            <!-- Detail Content -->
+            <div class="detail-info-box w-full">
+                <h1 class="detail-title font-montserrat text-3xl md:text-4xl font-extrabold text-primary mt-0 mb-4 tracking-tight">Ikan Guppy (Poecilia reticulata)</h1>
                 
-                <div class="detail-meta">
+                <div class="detail-meta flex gap-4 items-center mb-8">
                     <span class="category-tag tag-ikan">Ikan Hias</span>
                     <span class="difficulty-badge badge-easy"><i class="fa-solid fa-seedling"></i> Pemula (Easy)</span>
                 </div>
 
-                <!-- Parameter & Spesifikasi -->
-                <div class="detail-specs">
-                    <div class="detail-specs-item">
-                        <i class="fa-solid fa-temperature-half"></i>
+                <!-- Parameters & Specs Grid -->
+                <div class="detail-specs grid grid-cols-1 sm:grid-cols-2 gap-5 mb-8 bg-bg-section-alt p-6 rounded-xl border border-dashed border-slate-200">
+                    <div class="detail-specs-item flex items-center gap-2.5 text-base text-slate-600">
+                        <i class="fa-solid fa-temperature-half text-primary text-[1.1rem] w-5 text-center"></i>
                         <span><strong>Suhu Air:</strong> 22 - 28 °C</span>
                     </div>
-                    <div class="detail-specs-item">
-                        <i class="fa-solid fa-droplet"></i>
+                    <div class="detail-specs-item flex items-center gap-2.5 text-base text-slate-600">
+                        <i class="fa-solid fa-droplet text-primary text-[1.1rem] w-5 text-center"></i>
                         <span><strong>pH Air:</strong> 7.0 - 8.5</span>
                     </div>
-                    <div class="detail-specs-item">
-                        <i class="fa-solid fa-scale-balanced"></i>
+                    <div class="detail-specs-item flex items-center gap-2.5 text-base text-slate-600">
+                        <i class="fa-solid fa-scale-balanced text-primary text-[1.1rem] w-5 text-center"></i>
                         <span><strong>Kesadahan (GH):</strong> 8 - 12 dGH</span>
                     </div>
-                    <div class="detail-specs-item">
-                        <i class="fa-solid fa-maximize"></i>
+                    <div class="detail-specs-item flex items-center gap-2.5 text-base text-slate-600">
+                        <i class="fa-solid fa-maximize text-primary text-[1.1rem] w-5 text-center"></i>
                         <span><strong>Ukuran Dewasa:</strong> 4 - 6 cm</span>
                     </div>
-                    <div class="detail-specs-item">
-                        <i class="fa-solid fa-utensils"></i>
+                    <div class="detail-specs-item flex items-center gap-2.5 text-base text-slate-600">
+                        <i class="fa-solid fa-utensils text-primary text-[1.1rem] w-5 text-center"></i>
                         <span><strong>Tipe Pakan:</strong> Omnivora (Pelet/Cacing)</span>
                     </div>
-                    <div class="detail-specs-item">
-                        <i class="fa-solid fa-hourglass-half"></i>
+                    <div class="detail-specs-item flex items-center gap-2.5 text-base text-slate-600">
+                        <i class="fa-solid fa-hourglass-half text-primary text-[1.1rem] w-5 text-center"></i>
                         <span><strong>Harapan Hidup:</strong> 2 - 3 Tahun</span>
                     </div>
                 </div>
 
-                <!-- Deskripsi Lengkap -->
-                <div class="detail-desc">
-                    <p>
+                <!-- Descriptions -->
+                <div class="detail-desc text-[1.1rem] leading-relaxed text-slate-600 mb-10 text-justify">
+                    <p class="mt-0 mb-6">
                         Ikan Guppy adalah salah satu jenis ikan hias air tawar tropis yang paling populer di dunia. Ikan ini disukai karena keindahan fisiknya, terutama pada varietas jantan yang memiliki sirip punggung dan ekor yang lebar, melambai-lambai, serta bermotif warna-warni cemerlang mulai dari merah, biru, kuning, hingga pola mosaik.
                     </p>
-                    <p>
+                    <p class="mt-0 mb-6">
                         Sebagai anggota keluarga *Poeciliidae*, ikan Guppy termasuk dalam kelompok ikan *livebearer* yang melahirkan anaknya secara langsung (bukan bertelur). Proses perkembangbiakan mereka sangat cepat dan mudah di dalam ekosistem akuarium yang stabil, sehingga menjadikannya objek studi genetik yang sangat menarik bagi para pehobi.
                     </p>
-                    <p>
+                    <p class="mt-0 mb-6">
                         Dalam pemeliharaan aquascape, ikan Guppy sangat cocok karena memiliki sifat yang damai (peaceful) dan aktif berenang di lapisan atas hingga tengah air. Ikan ini tidak merusak tanaman air karena ukurannya yang kecil dan tidak memiliki kebiasaan menggali substrat. Mereka dapat hidup berdampingan dengan udang hias (*Caridina/Neocaridina*) dan spesies ikan kecil lainnya seperti Neon Tetra atau Corydoras.
                     </p>
-                    <p>
+                    <p class="mt-0 mb-6">
                         <strong>Tips Perawatan:</strong> Pastikan kualitas air terjaga dengan filter yang baik namun memiliki arus yang tidak terlalu kencang, karena sirip ekor Guppy yang lebar dapat membuat mereka mudah lelah berenang melawan arus kuat. Berikan makanan bervariasi berupa pelet mikro berkualitas tinggi yang dikombinasikan dengan makanan hidup/beku seperti cacing sutra atau daphnia untuk memaksimalkan kecerahan warnanya.
                     </p>
                 </div>
 
                 <!-- Action Button -->
-                <a href="library.html" class="btn"><i class="fa-solid fa-arrow-left"></i> Kembali ke Perpustakaan</a>
+                <a href="library.html" class="btn inline-block py-3 px-6 bg-primary text-white text-center font-bold rounded-lg hover:bg-primary-hover active:translate-y-0 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-200 cursor-pointer shadow-md select-none no-underline"><i class="fa-solid fa-arrow-left mr-2"></i> Kembali ke Perpustakaan</a>
             </div>
         </div>
     </main>
 
-    <footer>
-        <p>Copyright &#169; 2025. Ahmad Fillah Alwy</p>
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-10 px-4 text-[0.95rem] border-t-4 border-accent">
+        <p class="m-0 opacity-85">Copyright &#169; 2025. Ahmad Fillah Alwy</p>
     </footer>
 
     <!-- Dropdown Script -->

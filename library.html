@@ -1,52 +1,68 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/logo_ikan.png" type="image/png">
-    <link rel="stylesheet" href="assets/style/style.css">
-    <title>AquaSkuy - Perpustakaan Komponen</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <title>AquaSkuy - Perpustakaan</title>
 
     <!-- Google Fonts (Lato, Montserrat, Quicksand) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <header class="navbar-container">
-        <a href="index.html" class="logo">AquaSkuy</a>
+
+<body class="bg-bg-body text-slate-800 font-lato leading-relaxed">
+    <!-- Navbar Container -->
+    <header
+        class="navbar-container w-full flex py-3 px-6 md:px-40 mx-auto justify-between items-center z-[9999] shadow-sm bg-white/85 backdrop-blur-md border-b border-slate-200 sticky top-0 transition-all duration-300 flex-col md:flex-row gap-3 md:gap-0">
+        <a href="index.html"
+            class="logo font-montserrat text-3xl font-extrabold text-primary hover:text-accent tracking-tight transition-colors duration-200 no-underline">AquaSkuy</a>
         <nav>
-            <ul>
-                <li><a href="index.html#welcome">Welcome</a></li>
-                <li><a href="index.html#content">Content</a></li>
-                <li><a href="index.html#gallery">Gallery</a></li>
-                <li><a href="library.html" class="active-nav">Library</a></li>
-                <!-- <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">Contact <i class="fas fa-caret-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="https://www.linkedin.com/in/ahmadfillahalwy/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
-                        <li><a href="https://github.com/fillahalwy"><i class="fa-brands fa-github"></i> GitHub</a></li>
-                        <li><a href="https://www.instagram.com/a.fillahalwy/"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-                    </ul>
-                </li> -->
+            <ul class="flex justify-center items-center gap-1 md:gap-2 m-0 p-0 list-none">
+                <li><a href="index.html#welcome"
+                        class="text-primary py-2 px-3 md:px-5 text-base font-semibold rounded-md hover:bg-primary hover:text-white transition-all duration-200 no-underline">Welcome</a>
+                </li>
+                <li><a href="index.html#content"
+                        class="text-primary py-2 px-3 md:px-5 text-base font-semibold rounded-md hover:bg-primary hover:text-white transition-all duration-200 no-underline">Content</a>
+                </li>
+                <li><a href="index.html#gallery"
+                        class="text-primary py-2 px-3 md:px-5 text-base font-semibold rounded-md hover:bg-primary hover:text-white transition-all duration-200 no-underline">Gallery</a>
+                </li>
+                <li><a href="library.html"
+                        class="active-nav text-primary py-2 px-3 md:px-5 text-base font-semibold rounded-md hover:bg-primary hover:text-white transition-all duration-200 no-underline">Library</a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main>
         <!-- Hero Section -->
-        <section id="hero" class="library-hero">
-            <article class="hero-content">
-                <h1>Perpustakaan Aquascape</h1>
-                <p>Temukan informasi dan karakteristik komponen terbaik untuk ekosistem air Anda.</p>
+        <section id="hero"
+            class="library-hero h-[35vh] md:h-[45vh] bg-cover bg-center flex items-center justify-center text-center text-white overflow-hidden relative"
+            style="background-image: linear-gradient(rgba(15, 81, 68, 0.75), rgba(15, 81, 68, 0.45)), url('assets/img/aquarium.jpg');">
+            <article class="hero-content max-w-[800px] px-5 animate-fadeInUp">
+                <h1
+                    class="font-montserrat text-3xl sm:text-[2.75rem] font-extrabold mt-0 mb-4 tracking-tight leading-tight [text-shadow:2px_4px_8px_rgba(0,0,0,0.4)]">
+                    Perpustakaan Aquascape</h1>
+                <p
+                    class="text-base sm:text-lg font-light italic opacity-95 [text-shadow:1px_2px_4px_rgba(0,0,0,0.4)] m-0">
+                    Temukan informasi dan karakteristik komponen terbaik untuk ekosistem air Anda.</p>
             </article>
         </section>
 
         <!-- Filter Buttons -->
-        <div class="filter-container">
+        <div
+            class="filter-container flex justify-center items-center flex-wrap gap-2 md:gap-4 my-8 md:my-12 px-4 max-w-[800px] mx-auto">
             <button class="filter-btn active" data-filter="all">Semua</button>
             <button class="filter-btn" data-filter="ikan">Ikan</button>
             <button class="filter-btn" data-filter="tanaman">Tanaman</button>
@@ -55,116 +71,143 @@
         </div>
 
         <!-- Library Cards Grid -->
-        <section id="gallery" style="padding-top: 0;">
-            <div class="grid library-grid">
-                
+        <section id="gallery" class="px-6 md:px-12 py-12 bg-bg-body text-center">
+            <div
+                class="grid library-grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 px-0 md:px-8 lg:px-[8.5rem]">
+
                 <!-- CARD 1: Ikan Guppy (Ikan) -->
-                <div class="card library-card" data-category="ikan">
-                    <img src="assets/img/guppy.png" alt="Ikan Guppy">
-                    <div class="card-content">
-                        <div class="card-header-meta">
+                <div class="card library-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-md hover:-translate-y-1.5 hover:border-accent hover:shadow-xl transition-all duration-300 flex flex-col"
+                    data-category="ikan">
+                    <img src="assets/img/guppy.png" alt="Ikan Guppy" class="w-full h-72 object-cover block">
+                    <div class="card-content p-5 flex flex-col flex-grow min-h-[190px]">
+                        <div class="card-header-meta flex justify-between items-center mb-3">
                             <span class="category-tag tag-ikan">Ikan</span>
                             <span class="difficulty-badge badge-easy"><i class="fa-solid fa-seedling"></i> Easy</span>
                         </div>
-                        <h3>Ikan Guppy</h3>
-                        <p>
-                            Ikan hias air tawar berukuran kecil yang sangat populer karena sirip ekornya yang lebar dan berwarna-warni. Ikan ini sangat tangguh, mudah beradaptasi, serta cepat berkembang biak.
+                        <h3 class="mt-0 mb-2 font-montserrat text-primary text-[1.2rem] font-bold">Ikan Guppy</h3>
+                        <p
+                            class="text-[0.88rem] leading-relaxed mb-3 text-slate-600 text-justify max-h-[100px] overflow-y-auto flex-grow custom-scrollbar">
+                            Ikan hias air tawar berukuran kecil yang sangat populer karena sirip ekornya yang lebar dan
+                            berwarna-warni. Ikan ini sangat tangguh, mudah beradaptasi, serta cepat berkembang biak.
                         </p>
-                        <a href="library-detail.html" class="btn-detail">Lihat Detail <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="library-detail.html" class="btn-detail">Lihat Detail <i
+                                class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
 
                 <!-- CARD 2: Ikan Molly (Ikan) -->
-                <div class="card library-card" data-category="ikan">
-                    <img src="assets/img/molly.png" alt="Ikan Molly">
-                    <div class="card-content">
-                        <div class="card-header-meta">
+                <div class="card library-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-md hover:-translate-y-1.5 hover:border-accent hover:shadow-xl transition-all duration-300 flex flex-col"
+                    data-category="ikan">
+                    <img src="assets/img/molly.png" alt="Ikan Molly" class="w-full h-72 object-cover block">
+                    <div class="card-content p-5 flex flex-col flex-grow min-h-[190px]">
+                        <div class="card-header-meta flex justify-between items-center mb-3">
                             <span class="category-tag tag-ikan">Ikan</span>
                             <span class="difficulty-badge badge-easy"><i class="fa-solid fa-seedling"></i> Easy</span>
                         </div>
-                        <h3>Ikan Molly</h3>
-                        <p>
-                            Ikan hias kecil yang sangat bersahabat dan aktif berenang. Terkenal sebagai ikan pembersih alami karena gemar memakan alga rambut halus serta lapisan minyak di permukaan air.
+                        <h3 class="mt-0 mb-2 font-montserrat text-primary text-[1.2rem] font-bold">Ikan Molly</h3>
+                        <p
+                            class="text-[0.88rem] leading-relaxed mb-3 text-slate-600 text-justify max-h-[100px] overflow-y-auto flex-grow custom-scrollbar">
+                            Ikan hias kecil yang sangat bersahabat dan aktif berenang. Terkenal sebagai ikan pembersih
+                            alami karena gemar memakan alga rambut halus serta lapisan minyak di permukaan air.
                         </p>
                         <a href="#" class="btn-detail demo-btn">Lihat Detail <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
 
                 <!-- CARD 3: Tanaman Amazon Sword (Tanaman) -->
-                <div class="card library-card" data-category="tanaman">
-                    <img src="assets/img/amazon_sword.png" alt="Tanaman Amazon Sword">
-                    <div class="card-content">
-                        <div class="card-header-meta">
+                <div class="card library-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-md hover:-translate-y-1.5 hover:border-accent hover:shadow-xl transition-all duration-300 flex flex-col"
+                    data-category="tanaman">
+                    <img src="assets/img/amazon_sword.png" alt="Tanaman Amazon Sword"
+                        class="w-full h-72 object-cover block">
+                    <div class="card-content p-5 flex flex-col flex-grow min-h-[190px]">
+                        <div class="card-header-meta flex justify-between items-center mb-3">
                             <span class="category-tag tag-tanaman">Tanaman</span>
                             <span class="difficulty-badge badge-easy"><i class="fa-solid fa-seedling"></i> Easy</span>
                         </div>
-                        <h3>Tanaman Amazon Sword</h3>
-                        <p>
-                            Tanaman air berbentuk semak dengan daun lebar menyerupai pedang berwarna hijau segar. Sangat cocok ditempatkan sebagai titik fokus di bagian belakang tangki.
+                        <h3 class="mt-0 mb-2 font-montserrat text-primary text-[1.2rem] font-bold">Tanaman Amazon Sword
+                        </h3>
+                        <p
+                            class="text-[0.88rem] leading-relaxed mb-3 text-slate-600 text-justify max-h-[100px] overflow-y-auto flex-grow custom-scrollbar">
+                            Tanaman air berbentuk semak dengan daun lebar menyerupai pedang berwarna hijau segar. Sangat
+                            cocok ditempatkan sebagai titik fokus di bagian belakang tangki.
                         </p>
                         <a href="#" class="btn-detail demo-btn">Lihat Detail <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
 
                 <!-- CARD 4: Substrat Soil (Substrat) -->
-                <div class="card library-card" data-category="substrat">
-                    <img src="assets/img/soil.png" alt="Substrat Soil">
-                    <div class="card-content">
-                        <div class="card-header-meta">
+                <div class="card library-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-md hover:-translate-y-1.5 hover:border-accent hover:shadow-xl transition-all duration-300 flex flex-col"
+                    data-category="substrat">
+                    <img src="assets/img/soil.png" alt="Substrat Soil" class="w-full h-72 object-cover block">
+                    <div class="card-content p-5 flex flex-col flex-grow min-h-[190px]">
+                        <div class="card-header-meta flex justify-between items-center mb-3">
                             <span class="category-tag tag-substrat">Substrat</span>
                             <span class="difficulty-badge badge-medium"><i class="fa-solid fa-gears"></i> Medium</span>
                         </div>
-                        <h3>Soil Aquascape Premium</h3>
-                        <p>
-                            Substrat tanah liat olahan yang kaya akan nutrisi makro dan mikro. Memiliki kemampuan menstabilkan parameter air pada pH ideal untuk pertumbuhan akar tanaman karpet.
+                        <h3 class="mt-0 mb-2 font-montserrat text-primary text-[1.2rem] font-bold">Soil Aquascape
+                            Premium</h3>
+                        <p
+                            class="text-[0.88rem] leading-relaxed mb-3 text-slate-600 text-justify max-h-[100px] overflow-y-auto flex-grow custom-scrollbar">
+                            Substrat tanah liat olahan yang kaya akan nutrisi makro dan mikro. Memiliki kemampuan
+                            menstabilkan parameter air pada pH ideal untuk pertumbuhan akar tanaman karpet.
                         </p>
                         <a href="#" class="btn-detail demo-btn">Lihat Detail <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
 
                 <!-- CARD 5: Batu Malang (Substrat) -->
-                <div class="card library-card" data-category="substrat">
-                    <img src="assets/img/batu_malang.png" alt="Batu Malang">
-                    <div class="card-content">
-                        <div class="card-header-meta">
+                <div class="card library-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-md hover:-translate-y-1.5 hover:border-accent hover:shadow-xl transition-all duration-300 flex flex-col"
+                    data-category="substrat">
+                    <img src="assets/img/batu_malang.png" alt="Batu Malang" class="w-full h-72 object-cover block">
+                    <div class="card-content p-5 flex flex-col flex-grow min-h-[190px]">
+                        <div class="card-header-meta flex justify-between items-center mb-3">
                             <span class="category-tag tag-substrat">Substrat</span>
                             <span class="difficulty-badge badge-easy"><i class="fa-solid fa-seedling"></i> Easy</span>
                         </div>
-                        <h3>Batu / Pasir Malang</h3>
-                        <p>
-                            Substrat vulkanik berpori kasar alami yang diperoleh dari daerah Malang. Sangat baik untuk sirkulasi air di dasar tangki guna mencegah pembusukan akar tanaman.
+                        <h3 class="mt-0 mb-2 font-montserrat text-primary text-[1.2rem] font-bold">Batu / Pasir Malang
+                        </h3>
+                        <p
+                            class="text-[0.88rem] leading-relaxed mb-3 text-slate-600 text-justify max-h-[100px] overflow-y-auto flex-grow custom-scrollbar">
+                            Substrat vulkanik berpori kasar alami yang diperoleh dari daerah Malang. Sangat baik untuk
+                            sirkulasi air di dasar tangki guna mencegah pembusukan akar tanaman.
                         </p>
                         <a href="#" class="btn-detail demo-btn">Lihat Detail <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
 
                 <!-- CARD 6: Batu Seiryu (Hardscape) -->
-                <div class="card library-card" data-category="hardscape">
-                    <img src="assets/img/seiryu.png" alt="Batu Seiryu">
-                    <div class="card-content">
-                        <div class="card-header-meta">
+                <div class="card library-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-md hover:-translate-y-1.5 hover:border-accent hover:shadow-xl transition-all duration-300 flex flex-col"
+                    data-category="hardscape">
+                    <img src="assets/img/seiryu.png" alt="Batu Seiryu" class="w-full h-72 object-cover block">
+                    <div class="card-content p-5 flex flex-col flex-grow min-h-[190px]">
+                        <div class="card-header-meta flex justify-between items-center mb-3">
                             <span class="category-tag tag-hardscape">Hardscape</span>
                             <span class="difficulty-badge badge-medium"><i class="fa-solid fa-gears"></i> Medium</span>
                         </div>
-                        <h3>Batu Seiryu</h3>
-                        <p>
-                            Batu alam legendaris asal Jepang bersudut tajam dramatis dan dipenuhi retakan putih kalsit yang indah. Memberikan estetika tebing terjal alami yang sangat khas.
+                        <h3 class="mt-0 mb-2 font-montserrat text-primary text-[1.2rem] font-bold">Batu Seiryu</h3>
+                        <p
+                            class="text-[0.88rem] leading-relaxed mb-3 text-slate-600 text-justify max-h-[100px] overflow-y-auto flex-grow custom-scrollbar">
+                            Batu alam legendaris asal Jepang bersudut tajam dramatis dan dipenuhi retakan putih kalsit
+                            yang indah. Memberikan estetika tebing terjal alami yang sangat khas.
                         </p>
                         <a href="#" class="btn-detail demo-btn">Lihat Detail <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
 
                 <!-- CARD 7: Kayu Rasamala (Hardscape) -->
-                <div class="card library-card" data-category="hardscape">
-                    <img src="assets/img/rasamala.png" alt="Kayu Rasamala">
-                    <div class="card-content">
-                        <div class="card-header-meta">
+                <div class="card library-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-md hover:-translate-y-1.5 hover:border-accent hover:shadow-xl transition-all duration-300 flex flex-col"
+                    data-category="hardscape">
+                    <img src="assets/img/rasamala.png" alt="Kayu Rasamala" class="w-full h-72 object-cover block">
+                    <div class="card-content p-5 flex flex-col flex-grow min-h-[190px]">
+                        <div class="card-header-meta flex justify-between items-center mb-3">
                             <span class="category-tag tag-hardscape">Hardscape</span>
                             <span class="difficulty-badge badge-medium"><i class="fa-solid fa-gears"></i> Medium</span>
                         </div>
-                        <h3>Kayu Rasamala</h3>
-                        <p>
-                            Batang akar pohon alami berstruktur cabang halus berliku-liku eksotis. Sangat ideal untuk menciptakan struktur kanopi pepohonan bawah air atau menopang tanaman epifit.
+                        <h3 class="mt-0 mb-2 font-montserrat text-primary text-[1.2rem] font-bold">Kayu Rasamala</h3>
+                        <p
+                            class="text-[0.88rem] leading-relaxed mb-3 text-slate-600 text-justify max-h-[100px] overflow-y-auto flex-grow custom-scrollbar">
+                            Batang akar pohon alami berstruktur cabang halus berliku-liku eksotis. Sangat ideal untuk
+                            menciptakan struktur kanopi pepohonan bawah air atau menopang tanaman epifit.
                         </p>
                         <a href="#" class="btn-detail demo-btn">Lihat Detail <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
@@ -174,8 +217,9 @@
         </section>
     </main>
 
-    <footer>
-        <p>Copyright &#169; 2025. Ahmad Fillah Alwy</p>
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-10 px-4 text-[0.95rem] border-t-4 border-accent">
+        <p class="m-0 opacity-85">Copyright &#169; 2025. Ahmad Fillah Alwy</p>
     </footer>
 
     <!-- Scripts -->
@@ -184,14 +228,14 @@
         const dropdownToggle = document.querySelector('.dropdown-toggle');
         const dropdownMenu = document.querySelector('.dropdown-menu');
 
-        dropdownToggle.addEventListener('click', function(event) {
+        dropdownToggle.addEventListener('click', function (event) {
             event.preventDefault();
             dropdownMenu.classList.toggle('show');
         });
 
-        window.addEventListener('click', function(event){
-            if(!dropdownToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
-                if(dropdownMenu.classList.contains('show')) {
+        window.addEventListener('click', function (event) {
+            if (!dropdownToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                if (dropdownMenu.classList.contains('show')) {
                     dropdownMenu.classList.remove('show');
                 }
             }
@@ -223,11 +267,12 @@
         // Demo Details Alert for elements other than Guppy
         const demoBtns = document.querySelectorAll('.demo-btn');
         demoBtns.forEach(btn => {
-            btn.addEventListener('click', function(e) {
+            btn.addEventListener('click', function (e) {
                 e.preventDefault();
                 alert('Detail halaman demo saat ini hanya tersedia untuk "Ikan Guppy" guna menjaga efisiensi jumlah halaman.');
             });
         });
     </script>
 </body>
+
 </html>
