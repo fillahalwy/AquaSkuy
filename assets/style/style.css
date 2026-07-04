@@ -629,14 +629,43 @@ footer p {
     transform: scale(0.9);
 }
 
-/* Compact Library Cards */
+/* Library Grid Layout (4 Columns) */
+#gallery .library-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media screen and (max-width: 1200px) {
+    #gallery .library-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #gallery .library-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #gallery .library-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Compact Library Cards (Narrower & Longer) */
+.library-card {
+    max-width: 100%; /* Allow cards to stretch to fill grid columns completely */
+    width: 100%;
+    margin-inline: auto;
+}
+
 .library-card img {
-    height: 180px !important;
+    height: 280px !important; /* Adjusted to match fluid width aspect */
 }
 
 .library-card .card-content {
     padding: 1.25rem !important;
-    min-height: 180px;
+    min-height: 190px; /* Kept for description content vertical space */
 }
 
 .library-card h3 {
@@ -648,7 +677,7 @@ footer p {
     font-size: 0.88rem !important;
     margin-bottom: 0.75rem !important;
     line-height: 1.5 !important;
-    max-height: 72px !important;
+    max-height: 80px !important;
 }
 
 .btn-detail {
