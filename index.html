@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/logo_ikan.png" type="image/png">
-    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="./src/output.css">
     <title>AquaSkuy</title>
 
     <!-- Google Fonts (Lato, Montserrat, Quicksand) -->
@@ -15,114 +15,131 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <header class="navbar-container">
-        <a href="#" class="logo">AquaSkuy</a>
+<body class="bg-bg-body text-slate-800 font-lato leading-relaxed">
+    <!-- Navbar Container -->
+    <header class="navbar-container w-full flex py-3 px-6 md:px-40 mx-auto justify-between items-center z-[9999] shadow-sm bg-white/85 backdrop-blur-md border-b border-slate-200 sticky top-0 transition-all duration-300 flex-col md:flex-row gap-3 md:gap-0">
+        <a href="#" class="logo font-montserrat text-3xl font-extrabold text-primary hover:text-accent tracking-tight transition-colors duration-200 no-underline">AquaSkuy</a>
         <nav>
-            <ul>
-                <li><a href="#welcome">Welcome</a></li>
-                <li><a href="#content">Content</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="library.html">Library</a></li>
-                <!-- <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">Contact <i class="fas fa-caret-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="https://www.linkedin.com/in/ahmadfillahalwy/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
-                        <li><a href="https://github.com/fillahalwy"><i class="fa-brands fa-github"></i> GitHub</a></li>
-                        <li><a href="https://www.instagram.com/a.fillahalwy/"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-                    </ul>
-                </li> -->
+            <ul class="flex justify-center items-center gap-1 md:gap-2 m-0 p-0 list-none">
+                <li><a href="#welcome" class="text-primary py-2 px-3 md:px-5 text-base font-semibold rounded-md hover:bg-primary hover:text-white transition-all duration-200 no-underline">Welcome</a></li>
+                <li><a href="#content" class="text-primary py-2 px-3 md:px-5 text-base font-semibold rounded-md hover:bg-primary hover:text-white transition-all duration-200 no-underline">Content</a></li>
+                <li><a href="#gallery" class="text-primary py-2 px-3 md:px-5 text-base font-semibold rounded-md hover:bg-primary hover:text-white transition-all duration-200 no-underline">Gallery</a></li>
+                <li><a href="library.html" class="text-primary py-2 px-3 md:px-5 text-base font-semibold rounded-md hover:bg-primary hover:text-white transition-all duration-200 no-underline">Library</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
         <div>
-            <section id="hero">
-                <article class="hero-content">
-                    <h1>Diving Into the World of Aquascape</h1>
-                    <p>Discover the inspiration and beauty of the underwater ecosystem here.</p>
+            <!-- Hero Section -->
+            <section id="hero" class="h-[60vh] md:h-[85vh] bg-cover bg-center flex items-center justify-center text-center text-white overflow-hidden relative" style="background-image: linear-gradient(rgba(15, 81, 68, 0.75), rgba(15, 81, 68, 0.45)), url('assets/img/aquarium.jpg');">
+                <article class="hero-content max-w-[800px] px-5 animate-fadeInUp">
+                    <h1 class="font-montserrat text-4xl sm:text-[3.5rem] font-extrabold mt-0 mb-5 tracking-tight leading-tight [text-shadow:2px_4px_8px_rgba(0,0,0,0.4)]">Diving Into the World of Aquascape</h1>
+                    <p class="text-lg sm:text-[1.4rem] font-light italic opacity-95 [text-shadow:1px_2px_4px_rgba(0,0,0,0.4)] m-0">Discover the inspiration and beauty of the underwater ecosystem here.</p>
                 </article>
             </section>
-            <section id="welcome">
+
+            <!-- Welcome Section -->
+            <section id="welcome" class="py-16 md:py-24 px-6 text-center bg-bg-body">
                 <article class="welcome-content">
-                    <h2>Welcome to The Aquascaping World!</h2>
-                    <p>
+                    <h2 class="font-montserrat text-3xl md:text-4xl font-bold text-primary mt-0 mb-10 relative inline-block">
+                        Welcome to The Aquascaping World!
+                        <span class="absolute bottom-[-10px] left-1/2 -translate-x-1/2 w-[60px] h-[4px] bg-accent rounded"></span>
+                    </h2>
+                    <p class="text-base md:text-lg leading-relaxed max-w-[750px] mx-auto text-slate-600">
                         Aquascaping is more than just an aquarium. It is the art of creating stunning underwater landscapes. By combining aquatic plants, wood, rocks, and fauna, we can build a living, breathing mini ecosystem. This website is dedicated to sharing the beauty and inspiration of the world of aquascaping, from minimalist styles to lush underwater forests. Let's explore together!
                     </p>
                 </article>
             </section>
-            <section id="content">
-                <article class="main-content">
-                    <h2>What is Aquascape?</h2>
-                    <p>
+
+            <!-- Content Section -->
+            <section id="content" class="py-16 md:py-24 px-6 md:px-40 bg-bg-section-alt flex flex-col lg:flex-row gap-16">
+                <article class="main-content flex-[3]">
+                    <h2 class="font-montserrat text-3xl md:text-4xl font-bold text-primary mt-0 mb-10 relative inline-block text-left">
+                        What is Aquascape?
+                        <span class="absolute bottom-[-10px] left-0 w-[60px] h-[4px] bg-accent rounded"></span>
+                    </h2>
+                    <p class="text-[1.1rem] leading-relaxed text-slate-600 text-justify indent-8 my-5">
                         Aquascaping is essentially the art of creating underwater landscapes. Think of it as gardening, but with an aquarium as the medium. It's not just about keeping fish in a glass container; the main focus is on aesthetics and arranging aquatic plants, rocks, wood, and other natural elements to create a beautiful and harmonious scene. The goal is to build a mini ecosystem that is not only pleasing to the eye, but also functions in a balanced way, where every element, from plants to fish, has its own role to play.
                     </p>
-                    <p>
+                    <p class="text-[1.1rem] leading-relaxed text-slate-600 text-justify indent-8 my-5">
                         To build an aquascape, creators (called aquascapers) rely on several fundamental elements. The main element is Hardscape, which forms the “backbone” of the design, consisting of hard objects such as rocks, roots, or driftwood. Next is Flora or aquatic plants, which are the “flesh” of the landscape, providing color, texture, and life. Choosing the right plants is crucial to achieving the desired design style, such as the minimalist Iwagumi style or the lush and colorful Dutch Style. Finally, Fauna such as small fish, shrimp, or snails are added to complete the ecosystem, provide movement, and help maintain the cleanliness of the aquarium.
                     </p>
-                    <p>
+                    <p class="text-[1.1rem] leading-relaxed text-slate-600 text-justify indent-8 my-5">
                         Creating an aquascape is a discipline that requires a combination of artistic vision and scientific understanding. From an artistic perspective, an aquascaper must understand visual design principles such as composition, perspective, balance, and focal point to create the illusion of depth and a natural landscape. However, this beauty will not last without a strong scientific foundation. Knowledge of plant biology, nutritional requirements, the nitrogen cycle, water chemistry, and the vital role of lighting and carbon dioxide (CO2) supply is key to ensuring that all plants thrive and the ecosystem remains healthy in the long term.
                     </p>
-                    <p>
+                    <p class="text-[1.1rem] leading-relaxed text-slate-600 text-justify indent-8 my-5">
                         The end result of a well-maintained aquascape is a living work of art that continues to evolve. The scenery created within it can provide tranquility and be a source of relaxation amid the hustle and bustle of everyday life. For those who practice it, aquascaping is not just a hobby, but a form of self-expression and a way to reconnect with nature. The process, from designing, planting, to maintaining, provides a unique sense of satisfaction when seeing a beautiful mini ecosystem successfully grow and thrive indoors.
                     </p>
                 </article>
-                <aside>
-                    <div class="card">
-                        <img src="assets/img/aquarium.jpg" alt="Aquarium">
-                        <div class="card-content">
-                            <h3>Quick Tips for Beginners</h3>
-                            <ol>
-                                <li>Use low-tech plants.</li>
-                                <li>Cycle the aquarium</li>
-                                <li>Don't overstock it with fish</li>
-                                <li>Change the water regularly</li>
-                                <li>Patience is key!</li>
+                <aside class="flex-[1.2] lg:mt-24">
+                    <div class="card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+                        <img src="assets/img/aquarium.jpg" alt="Aquarium" class="w-full h-[220px] object-cover block">
+                        <div class="card-content p-8">
+                            <h3 class="mt-0 mb-5 font-montserrat text-primary text-xl font-bold">Quick Tips for Beginners</h3>
+                            <ol class="pl-5 m-0 text-slate-600 list-decimal flex flex-col gap-2.5">
+                                <li class="text-[1.05rem]">Use low-tech plants.</li>
+                                <li class="text-[1.05rem]">Cycle the aquarium</li>
+                                <li class="text-[1.05rem]">Don't overstock it with fish</li>
+                                <li class="text-[1.05rem]">Change the water regularly</li>
+                                <li class="text-[1.05rem]">Patience is key!</li>
                             </ol>
                         </div>
                     </div>
                 </aside>
             </section>
-            <section id="gallery">
-                <h2 class="gallery-title">Gallery</h2>
-                <div class="grid">
-                    <div class="card">
-                        <img src="assets/img/Lush-Jungle-Aquascape.jpeg" alt="Lush Jungle Aquascape">
-                        <div class="card-content">
-                            <h3>Lush Jungle Aquascape</h3>
-                            <p>
+
+            <!-- Gallery Section -->
+            <section id="gallery" class="py-16 md:py-24 px-6 bg-bg-body text-center">
+                <h2 class="gallery-title font-montserrat text-3xl md:text-4xl font-bold text-primary mt-0 mb-10 relative inline-block">
+                    Gallery
+                    <span class="absolute bottom-[-10px] left-1/2 -translate-x-1/2 w-[60px] h-[4px] bg-accent rounded"></span>
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-0 md:px-8 lg:px-[8.5rem] mt-8 text-left">
+                    <!-- CARD 1 -->
+                    <div class="card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-md hover:-translate-y-1.5 hover:border-accent hover:shadow-xl transition-all duration-300 flex flex-col">
+                        <img src="assets/img/Lush-Jungle-Aquascape.jpeg" alt="Lush Jungle Aquascape" class="w-full h-[260px] object-cover">
+                        <div class="card-content p-7 flex flex-col flex-grow">
+                            <h3 class="mt-0 mb-3 font-montserrat text-primary text-xl font-bold">Lush Jungle Aquascape</h3>
+                            <p class="text-[0.95rem] leading-relaxed mb-7 text-slate-600 text-justify max-h-[110px] overflow-y-auto flex-grow custom-scrollbar">
                                 The lush jungle aquascape is perfect for plant lovers who envision a thick, green underwater forest. Use nutrient-rich substrate to foster plant growth, and densely plant species like Amazon swords, Cryptocoryne, Java fern, and Vallisneria.
                             </p>
-                            <a href="#" class="btn">Detail</a>
+                            <a href="#" class="btn inline-block py-3 px-6 bg-primary text-white text-center font-bold rounded-lg hover:bg-primary-hover active:translate-y-0 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-200 cursor-pointer shadow-md select-none no-underline">Detail</a>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="assets/img/Natural-Riverbed-Theme.jpeg" alt="Natural Riverbed">
-                        <div class="card-content">
-                            <h3>Natural Riverbed Theme</h3>
-                            <p>
+                    <!-- CARD 2 -->
+                    <div class="card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-md hover:-translate-y-1.5 hover:border-accent hover:shadow-xl transition-all duration-300 flex flex-col">
+                        <img src="assets/img/Natural-Riverbed-Theme.jpeg" alt="Natural Riverbed" class="w-full h-[260px] object-cover">
+                        <div class="card-content p-7 flex flex-col flex-grow">
+                            <h3 class="mt-0 mb-3 font-montserrat text-primary text-xl font-bold">Natural Riverbed Theme</h3>
+                            <p class="text-[0.95rem] leading-relaxed mb-7 text-slate-600 text-justify max-h-[110px] overflow-y-auto flex-grow custom-scrollbar">
                                 The natural riverbed theme captures the beauty of river ecosystems in an aquarium setting. Begin by laying a substrate of small gravel or smooth river stones that resemble the natural textures of a river floor. Use various sizes of smooth stones and scatter driftwood, anchoring it in different spots to create a flowing, organic layout.
                             </p>
-                            <a href="#" class="btn">Detail</a>
+                            <a href="#" class="btn inline-block py-3 px-6 bg-primary text-white text-center font-bold rounded-lg hover:bg-primary-hover active:translate-y-0 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-200 cursor-pointer shadow-md select-none no-underline">Detail</a>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="assets/img/Rocky-Cichlid-Habitat.jpeg" alt="Rocky Cichlid Habitat">
-                        <div class="card-content">
-                            <h3>Rocky Cichlid Habitat</h3>
-                            <p>
+                    <!-- CARD 3 -->
+                    <div class="card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-md hover:-translate-y-1.5 hover:border-accent hover:shadow-xl transition-all duration-300 flex flex-col">
+                        <img src="assets/img/Rocky-Cichlid-Habitat.jpeg" alt="Rocky Cichlid Habitat" class="w-full h-[260px] object-cover">
+                        <div class="card-content p-7 flex flex-col flex-grow">
+                            <h3 class="mt-0 mb-3 font-montserrat text-primary text-xl font-bold">Rocky Cichlid Habitat</h3>
+                            <p class="text-[0.95rem] leading-relaxed mb-7 text-slate-600 text-justify max-h-[110px] overflow-y-auto flex-grow custom-scrollbar">
                                 Cichlids, particularly African cichlids, thrive in rocky environments that provide ample hiding spaces and territory divisions. Use a mix of limestone, slate, and smooth lava rocks to create stable rock formations, stacking them to form caves and ledges.
                             </p>
-                            <a href="#" class="btn">Detail</a>
+                            <a href="#" class="btn inline-block py-3 px-6 bg-primary text-white text-center font-bold rounded-lg hover:bg-primary-hover active:translate-y-0 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-200 cursor-pointer shadow-md select-none no-underline">Detail</a>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
     </main>
-    <footer>
-        <p>Copyright &#169; 2025. Ahmad Fillah Alwy</p>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-10 px-4 text-[0.95rem] border-t-4 border-accent">
+        <p class="m-0 opacity-85">Copyright &#169; 2025. Ahmad Fillah Alwy</p>
     </footer>
+
+    <!-- Scripts -->
     <script>
         const dropdownToggle = document.querySelector('.dropdown-toggle');
         const dropdownMenu = document.querySelector('.dropdown-menu');
@@ -133,7 +150,7 @@
         });
 
         window.addEventListener('click', function(event){
-            if(!dropdownToggle.contains(event.target) && dropdownMenu.contains(event.target)) {
+            if(!dropdownToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
                 if(dropdownMenu.classList.contains('show')) {
                     dropdownMenu.classList.remove('show');
                 }
@@ -142,5 +159,3 @@
     </script>
 </body>
 </html>
-
-<!-- Foto dan deskripsi yang ada pada bagian gallery berasal dari web https://aquifarm.com/freshwater-aquarium-setup-ideas/ -->
